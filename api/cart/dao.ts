@@ -6,6 +6,7 @@ class CartDao {
     console.log(cart);
     try {
       const newCart = await Cart.create(cart);
+      console.log("estoy en el dao");
       console.log(newCart);
       return newCart;
     } catch (error) {

@@ -7,6 +7,7 @@ class CartService {
   async addCart(cart: ICart) {
     try {
       const newCart = await addCart(cart);
+      console.log("estoy en el sevice");
       return newCart;
     } catch (error) {
       throw Error((error as Error).message);
